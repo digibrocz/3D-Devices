@@ -576,12 +576,12 @@
 #define NUM_Z_STEPPER_DRIVERS 3   // (1-4) Z options change based on how many
 
 #if NUM_Z_STEPPER_DRIVERS > 1
-  //#define Z_MULTI_ENDSTOPS
+  #define Z_MULTI_ENDSTOPS
   #if ENABLED(Z_MULTI_ENDSTOPS)
-    #define Z2_USE_ENDSTOP          _XMAX_
+    #define Z2_USE_ENDSTOP          Z2_MAX_PIN
     #define Z2_ENDSTOP_ADJUSTMENT   0
     #if NUM_Z_STEPPER_DRIVERS >= 3
-      #define Z3_USE_ENDSTOP        _YMAX_
+      #define Z3_USE_ENDSTOP        Z3_MAX_PIN
       #define Z3_ENDSTOP_ADJUSTMENT 0
     #endif
     #if NUM_Z_STEPPER_DRIVERS >= 4
@@ -2461,7 +2461,7 @@
    * Use Trinamic's ultra quiet stepping mode.
    * When disabled, Marlin will use spreadCycle stepping mode.
    */
-  #define STEALTHCHOP_XY
+  //#define STEALTHCHOP_XY
   #define STEALTHCHOP_Z
   #define STEALTHCHOP_E
 
@@ -2530,12 +2530,12 @@
   #define X2_HYBRID_THRESHOLD    300
   #define Y_HYBRID_THRESHOLD     1  // na 300 nedelalo bordel na 100 obcas "skrtne" ale otazka jestli je to tim
   #define Y2_HYBRID_THRESHOLD    1
-  #define Z_HYBRID_THRESHOLD      1
-  #define Z2_HYBRID_THRESHOLD     1
-  #define Z3_HYBRID_THRESHOLD      1
-  #define Z4_HYBRID_THRESHOLD      10
-  #define E0_HYBRID_THRESHOLD     30
-  #define E1_HYBRID_THRESHOLD     30
+  #define Z_HYBRID_THRESHOLD     1
+  #define Z2_HYBRID_THRESHOLD    1
+  #define Z3_HYBRID_THRESHOLD     1
+  #define Z4_HYBRID_THRESHOLD     1
+  #define E0_HYBRID_THRESHOLD     1
+  #define E1_HYBRID_THRESHOLD     1
   #define E2_HYBRID_THRESHOLD     0
   #define E3_HYBRID_THRESHOLD     0
   #define E4_HYBRID_THRESHOLD     0

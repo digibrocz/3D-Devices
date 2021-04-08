@@ -54,8 +54,9 @@
 #define Y_MIN_PIN                           PC13
 #define Y_MAX_PIN                           PG14 //PG9 E1
 #define Z_MIN_PIN                           PI11
-#define Z_MAX_PIN                           PF6 //PD3
-
+#define Z_MAX_PIN                           PG9 //PD3
+#define Z2_MAX_PIN                           PE0 
+#define Z3_MAX_PIN                           PH6
 //
 // Pins on the extender
 //
@@ -250,7 +251,7 @@
 #define TEMP_BED_PIN                        PC0   // T0 <-> Bed
 
 
-#define KILL_PIN                            PH6
+
 
 
 //#define TEMP_PROBE_PIN                      TEMP_2_PIN   // T3 <-> Pinda
