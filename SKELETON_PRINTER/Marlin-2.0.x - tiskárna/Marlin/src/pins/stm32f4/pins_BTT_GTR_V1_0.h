@@ -53,7 +53,7 @@
 #define X_MAX_PIN                           PD3 //PG14
 #define Y_MIN_PIN                           PC13
 #define Y_MAX_PIN                           PI4 //PG9 E1
-#define Z_MIN_PIN                           PI11
+#define Z_MIN_PIN                           PH11
 #define Z_MAX_PIN                           PF6 //PD3
 
 //
