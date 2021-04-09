@@ -1,1 +1,0 @@
-boot plus od 0 a firmware.bin od adresy 8000 maka
