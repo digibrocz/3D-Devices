@@ -50,6 +50,7 @@ namespace Language_cz {
   PROGMEM Language_Str MSG_MEDIA_REMOVED                   = _UxGT("Médium vyjmuto");
   PROGMEM Language_Str MSG_MEDIA_WAITING                   = _UxGT("Čekání na médium");
   PROGMEM Language_Str MSG_MEDIA_READ_ERROR                = _UxGT("Chyba čtení média");
+  PROGMEM Language_Str MSG_SD_INIT_FAIL                    = _UxGT("Chyba inicializace");
   PROGMEM Language_Str MSG_MEDIA_USB_REMOVED               = _UxGT("USB odstraněno");
   PROGMEM Language_Str MSG_MEDIA_USB_FAILED                = _UxGT("Chyba USB");
   PROGMEM Language_Str MSG_LCD_ENDSTOPS                    = _UxGT("Endstopy"); // max 8 znaku
@@ -60,6 +61,7 @@ namespace Language_cz {
   PROGMEM Language_Str MSG_RUN_AUTO_FILES                  = _UxGT("Autostart");
   PROGMEM Language_Str MSG_DISABLE_STEPPERS                = _UxGT("Uvolnit motory");
   PROGMEM Language_Str MSG_DEBUG_MENU                      = _UxGT("Nabídka ladění");
+  PROGMEM Language_Str MSG_SOUND                           = _UxGT("Zvuk");
   #if LCD_WIDTH >= 20
     PROGMEM Language_Str MSG_PROGRESS_BAR_TEST             = _UxGT("Test ukaz. průběhu");
   #else
@@ -309,6 +311,9 @@ namespace Language_cz {
   PROGMEM Language_Str MSG_LOAD_EEPROM                     = _UxGT("Načíst nastavení");
   PROGMEM Language_Str MSG_RESTORE_DEFAULTS                = _UxGT("Obnovit výchozí");
   PROGMEM Language_Str MSG_INIT_EEPROM                     = _UxGT("Inic. EEPROM");
+  PROGMEM Language_Str MSG_ERR_EEPROM_CRC                  = _UxGT("EEPROM chyba CRC");
+  PROGMEM Language_Str MSG_ERR_EEPROM_INDEX                = _UxGT("EEPROM chyba IDX");
+  PROGMEM Language_Str MSG_ERR_EEPROM_VERSION              = _UxGT("EEPROM chyba VER");
   PROGMEM Language_Str MSG_MEDIA_UPDATE                    = _UxGT("Aktualizace z SD");
   PROGMEM Language_Str MSG_RESET_PRINTER                   = _UxGT("Reset tiskárny");
   PROGMEM Language_Str MSG_REFRESH                         = LCD_STR_REFRESH _UxGT("Obnovit");
@@ -332,8 +337,8 @@ namespace Language_cz {
   PROGMEM Language_Str MSG_CANCEL_OBJECT                   = _UxGT("Zrušit objekt");
   PROGMEM Language_Str MSG_CANCEL_OBJECT_N                 = _UxGT("Zrušit objekt =");
   PROGMEM Language_Str MSG_OUTAGE_RECOVERY                 = _UxGT("Obnova výpadku");
-  PROGMEM Language_Str MSG_MEDIA_MENU                      = _UxGT("Tisknout z SD");
-  PROGMEM Language_Str MSG_NO_MEDIA                        = _UxGT("Žádná SD karta");
+  PROGMEM Language_Str MSG_MEDIA_MENU                      = _UxGT("Tisknout");
+  PROGMEM Language_Str MSG_NO_MEDIA                        = _UxGT("Žádné médium");
   PROGMEM Language_Str MSG_DWELL                           = _UxGT("Uspáno...");
   PROGMEM Language_Str MSG_USERWAIT                        = _UxGT("Čekání na uživ...");
   PROGMEM Language_Str MSG_PRINT_PAUSED                    = _UxGT("Tisk pozastaven");
@@ -365,7 +370,7 @@ namespace Language_cz {
   PROGMEM Language_Str MSG_FILAMENTUNLOAD                  = _UxGT("Vysunout filament");
   PROGMEM Language_Str MSG_FILAMENTUNLOAD_E                = _UxGT("Vysunout filament *");
   PROGMEM Language_Str MSG_FILAMENTUNLOAD_ALL              = _UxGT("Vysunout vše");
-
+  PROGMEM Language_Str MSG_ZPROBE_OFFSETS                  = _UxGT("Offsety sondy Z");
   PROGMEM Language_Str MSG_ATTACH_MEDIA                    = _UxGT("Načíst médium");
   PROGMEM Language_Str MSG_CHANGE_MEDIA                    = _UxGT("Vyměnit médium");
   PROGMEM Language_Str MSG_RELEASE_MEDIA                   = _UxGT("Vysunout médium");
