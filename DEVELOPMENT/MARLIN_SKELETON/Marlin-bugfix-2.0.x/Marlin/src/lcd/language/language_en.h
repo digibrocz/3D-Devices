@@ -533,7 +533,7 @@ namespace Language_en {
   PROGMEM Language_Str MSG_INFO_RUNAWAY_OFF                = _UxGT("Runaway Watch: OFF");
   PROGMEM Language_Str MSG_INFO_RUNAWAY_ON                 = _UxGT("Runaway Watch: ON");
   PROGMEM Language_Str MSG_HOTEND_IDLE_TIMEOUT             = _UxGT("Hotend Idle Timeout");
-
+  PROGMEM Language_Str MSG_TMC_TEMP_PREWARN                = _UxGT("!TMC HI TEMP!");
   PROGMEM Language_Str MSG_CASE_LIGHT                      = _UxGT("Case Light");
   PROGMEM Language_Str MSG_CASE_LIGHT_BRIGHTNESS           = _UxGT("Light Brightness");
   PROGMEM Language_Str MSG_KILL_EXPECTED_PRINTER           = _UxGT("INCORRECT PRINTER");

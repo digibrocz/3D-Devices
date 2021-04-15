@@ -484,7 +484,8 @@ namespace Language_cz {
   PROGMEM Language_Str MSG_DAC_PERCENT_Z                   = _UxGT("Z Motor %");
   PROGMEM Language_Str MSG_DAC_PERCENT_E                   = _UxGT("E Motor %");
   PROGMEM Language_Str MSG_DAC_EEPROM_WRITE                = _UxGT("DAC uložit EEPROM");
-  PROGMEM Language_Str MSG_ERROR_TMC                       = _UxGT("TMC CHYBA SPOJENÍ");
+  PROGMEM Language_Str MSG_ERROR_TMC                       = _UxGT("TMC CHYBA SPOJENÍ");   
+  PROGMEM Language_Str MSG_TMC_TEMP_PREWARN                = _UxGT("!VYS.TEPLOTA TMC !");
   PROGMEM Language_Str MSG_FILAMENT_CHANGE_HEADER          = _UxGT("VÝMĚNA FILAMENTU");
   PROGMEM Language_Str MSG_FILAMENT_CHANGE_HEADER_PAUSE    = _UxGT("TISK POZASTAVEN");
   PROGMEM Language_Str MSG_FILAMENT_CHANGE_HEADER_LOAD     = _UxGT("ZAVEDENÍ FILAMENTU");

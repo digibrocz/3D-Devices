@@ -20,7 +20,7 @@
  *
  */
 #pragma once
-
+#include "../inc/MarlinConfigPre.h"
 #include "../inc/MarlinConfig.h"
 #include "../lcd/marlinui.h"
 
@@ -314,6 +314,7 @@ void tmc_print_current(TMC &st) {
   void tmc_report_otpw(TMC &st) {
     st.printLabel();
     SERIAL_ECHOPGM(" temperature prewarn triggered: ");
+    ui.set_status(GET_TEXT(MSG_TMC_TEMP_PREWARN));
     serialprint_truefalse(st.getOTPW());
     SERIAL_EOL();
   }
