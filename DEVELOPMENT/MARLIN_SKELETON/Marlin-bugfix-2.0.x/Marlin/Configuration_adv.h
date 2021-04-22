@@ -2688,7 +2688,10 @@
     #define REPORT_CURRENT_CHANGE
     #define STOP_ON_ERROR
   #endif
-
+/**
+   * Enable debugging menu for TMC stepper drivers.   
+   */  
+ // #define TMC_DIAG_MENU
   /**
    * TMC2130, TMC2160, TMC2208, TMC2209, TMC5130 and TMC5160 only
    * The driver will switch to spreadCycle when stepper speed is over HYBRID_THRESHOLD.

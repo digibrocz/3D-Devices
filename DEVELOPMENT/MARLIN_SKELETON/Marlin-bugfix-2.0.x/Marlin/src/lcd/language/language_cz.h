@@ -40,7 +40,7 @@ namespace Language_cz {
 
   constexpr uint8_t    CHARSIZE                            = 2;
   PROGMEM Language_Str LANGUAGE                            = _UxGT("Czech");
-
+  PROGMEM Language_Str MSG_SETTINGS_STORED                 = _UxGT("Nastavení uloženo");
   PROGMEM Language_Str WELCOME_MSG                         = MACHINE_NAME _UxGT(" připraven.");
   PROGMEM Language_Str MSG_YES                             = _UxGT("ANO");
   PROGMEM Language_Str MSG_NO                              = _UxGT("NE");
@@ -484,8 +484,8 @@ namespace Language_cz {
   PROGMEM Language_Str MSG_DAC_PERCENT_Z                   = _UxGT("Z Motor %");
   PROGMEM Language_Str MSG_DAC_PERCENT_E                   = _UxGT("E Motor %");
   PROGMEM Language_Str MSG_DAC_EEPROM_WRITE                = _UxGT("DAC uložit EEPROM");
-  PROGMEM Language_Str MSG_ERROR_TMC                       = _UxGT("TMC CHYBA SPOJENÍ");   
-  PROGMEM Language_Str MSG_TMC_TEMP_PREWARN                = _UxGT("!VYS.TEPLOTA TMC !");
+  PROGMEM Language_Str MSG_ERROR_TMC                       = _UxGT("TMC CHYBA SPOJENÍ");
+  PROGMEM Language_Str MSG_TMC_DIAG                        = _UxGT("Diagnostika TMC");
   PROGMEM Language_Str MSG_FILAMENT_CHANGE_HEADER          = _UxGT("VÝMĚNA FILAMENTU");
   PROGMEM Language_Str MSG_FILAMENT_CHANGE_HEADER_PAUSE    = _UxGT("TISK POZASTAVEN");
   PROGMEM Language_Str MSG_FILAMENT_CHANGE_HEADER_LOAD     = _UxGT("ZAVEDENÍ FILAMENTU");
@@ -498,6 +498,7 @@ namespace Language_cz {
   PROGMEM Language_Str MSG_RUNOUT_DISTANCE_MM              = _UxGT("Délka mm senz.fil.");
   PROGMEM Language_Str MSG_KILL_HOMING_FAILED              = _UxGT("Parkování selhalo");
   PROGMEM Language_Str MSG_LCD_PROBING_FAILED              = _UxGT("Kalibrace selhala");
+
 
   PROGMEM Language_Str MSG_MMU2_CHOOSE_FILAMENT_HEADER     = _UxGT("VYBERTE FILAMENT");
   PROGMEM Language_Str MSG_MMU2_MENU                       = _UxGT("MMU");

@@ -244,6 +244,13 @@ void menu_tmc_current() {
   }
 
 #endif
+#define TMC_EDIT_DIAG(ST, STR)
+void menu_tmc_diag_mode() {
+    START_MENU();
+    BACK_ITEM(MSG_TMC_DRIVERS);
+    
+    END_MENU();
+  }
 
 void menu_tmc() {
   START_MENU();
@@ -257,6 +264,9 @@ void menu_tmc() {
   #endif
   #if HAS_STEALTHCHOP
     SUBMENU(MSG_TMC_STEPPING_MODE, menu_tmc_step_mode);
+  #endif
+   #if ENABLED(TMC_DIAG_MENU)
+    SUBMENU(MSG_TMC_DIAG, menu_tmc_diag_mode);
   #endif
   END_MENU();
 }
