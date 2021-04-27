@@ -135,6 +135,10 @@ namespace Language_cz {
   PROGMEM Language_Str MSG_HOTEND_OFFSET_Y                 = _UxGT("2. tryska Y");
   PROGMEM Language_Str MSG_HOTEND_OFFSET_Z                 = _UxGT("2. tryska Z");
 
+  PROGMEM Language_Str MSG_DECREASING_ACCURACY             = _UxGT("Přesnost snížena!");
+  PROGMEM Language_Str MSG_ACCURACY_ACHIEVED               = _UxGT("Přesnost dosažena");
+  PROGMEM Language_Str MSG_ITERATION                       = _UxGT("Kalibrace Z: %i");
+
   PROGMEM Language_Str MSG_UBL_DOING_G29                   = _UxGT("Provádím G29");
   PROGMEM Language_Str MSG_UBL_TOOLS                       = _UxGT("UBL nástroje");
   PROGMEM Language_Str MSG_UBL_LEVEL_BED                   = _UxGT("Unified Bed Leveling");
