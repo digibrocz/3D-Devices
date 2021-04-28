@@ -220,6 +220,8 @@ G29_TYPE GcodeSuite::G29() {
 
   TERN_(PROBE_MANUALLY, static) G29_State abl;
 
+  TERN_(FULL_REPORT_TO_HOST_FEATURE, set_and_report_grblstate(M_PROBE));
+
   reset_stepper_timeout();
 
   const bool seenQ = EITHER(DEBUG_LEVELING_FEATURE, PROBE_MANUALLY) && parser.seen('Q');
@@ -896,6 +898,8 @@ G29_TYPE GcodeSuite::G29() {
   #endif
 
   report_current_position();
+
+  TERN_(FULL_REPORT_TO_HOST_FEATURE, set_and_report_grblstate(M_IDLE));
 
   G29_RETURN(isnan(abl.measured_z));
 }
